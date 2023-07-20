@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="login.html">
+    <link rel="stylesheet" href="sinup.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="https://w0.peakpx.com/wallpaper/280/848/HD-wallpaper-valorant-game-logo-valorant-games-2020-games-logo.jpg" />
+    <!-- <link rel="stylesheet" href="longin2.html"> -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Gaming interface</title>
+</head>
+<style>
+  .sliding-line {
+    position: relative;
+  }
+
+  .sliding-line::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0px;
+    height: 5px;
+    background-color: rgb(255, 34, 0);
+    transition: width 0.8s;
+  }
+
+  .sliding-line:hover::after {
+    width: 75%;
+  }
+  .nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 4px;
+  background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00, #ffff00);
+  animation: glowing 2s ease-in-out infinite;
+}
+.nav-link {
+  position: relative;
+  display: inline-block;
+}
+@keyframes glowing {
+  0% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.8); }
+  50% { box-shadow: 0 0 20px rgba(0, 255, 255, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(255, 0, 255, 0.8); }
+}
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#" style="color: rgb(247, 247, 247); font-weight: bold; text-shadow: 2px 2px 10px rgb(255, 17, 0);">GAMING ZONE</a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="login.html" style="font-weight: bold; text-shadow: #00ff00 1px 1px 1px; color: rgba(13, 142, 254, 0.852);"  content: "">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="sinup.html"  style="font-weight: bold; text-shadow: #00ff00 1px 1px 1px; color: rgba(13, 141, 254, 0.941);">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="https://gamemodules7sirproject1.netlify.app/#"  style="font-weight: bold; text-shadow: #00ff00 1px 1px 1px; color: rgba(13, 141, 254, 0.941);">More Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html"  style="font-weight: bold; text-shadow: #00ff00 1px 1px 1px; color: rgba(13, 141, 254, 0.941);">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="buy-games.html"  style="font-weight: bold; text-shadow: #00ff00 1px 1px 1px; color: rgba(13, 141, 254, 0.941);">Buy Online Games</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="buy-games.html"  style="font-weight: bold; text-shadow: #00ff00 1px 1px 1px; color: rgba(13, 141, 254, 0.941);">Log Out</a>
+          </li>
+        <form class="d-flex">
+          <input style="margin-left: 5vw;" class="form-control me-2" type="search " placeholder="Search your Game Here" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+<div class="contanor">
+<div class="catagries">
+<div class="item1">
+<form>
+    <h1 class="sliding-line">categories</h1>
+    <input   type="checkbox" id="item" name="item2" value="Item 2">
+    <label  for="item2" id="item">Action</label><br>
+    <input  type="checkbox" id="item" name="item3" value="Item 3">
+    <label  for="item3" id="item">FPS</label><br>
+    <input  type="checkbox" id="item" name="item4" value="Item 4">
+    <label  for="item4" id="item">Thriller</label><br>
+    <input  type="checkbox" id="item" name="item5" value="Item 5">
+    <label for="item5" id="item">Open World</label><br>
+  </form>
+</div>
+<div class = "item2">
+    <form>
+    <h1 class="sliding-line">Popular</h1>
+    <h1 class="sliding-line">Games</h1>
+       
+        <label id="item" for="item1">GTA V</label><br>
+        <label id="item" for="item2">PUBG</label><br>
+        <label id="item" for="item3">Clash Of Clans</label><br>
+        <label id="item" for="item4">Hitman</label><br>
+        <label id="item" for="item4">Last Of Us </label><br>
+        <label id="item" for="item4">Last Of Us II</label><br>
+        <label id="item" for="item4">Valvorant</label><br>
+        <label id="item" for="item4">Cyber Punk 77</label><br>
+
+</div>
+</div>
+<div >
+    <div class="interface">
+        <div class="container">
+           <a  href="https://www.youtube.com/watch?v=Hmr-gUAOxOw" target="_blank"> <img class="large-image" src="https://whatifgaming.com/wp-content/uploads/2022/06/MinecraftLegends_Wallpaper_1920x1080-1024x576.png" alt="Large Image"></a>
+          </div>
+          
+          <div class="container">
+            <a href="https://www.youtube.com/watch?v=nCAnpatMDXM"  target="_blank"><img class="small-image" src="https://wallpaperaccess.com/full/1133687.jpg" alt="Small Image 1" ></a>
+            <a href="https://www.youtube.com/watch?v=ZRhJT2nmvA4" target="_blank"><img class="small-image" src="https://static.toiimg.com/thumb/msid-94852851,width-1280,height-720,resizemode-4/.jpg " alt="Small Image 2"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/895/613/HD-wallpaper-watch-dogs-2-game-watch-dogs-2-games-2016-games-pc-games-xbox-games-ps-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=J14G0bWU4T0" target="_blank"><img class="small-image" src="https://cdn.akamai.steamstatic.com/steam/apps/1222680/capsule_616x353.jpg?t=1667318479" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=f4yJSq_pK3I" target="_blank"><img class="small-image" src="https://whatifgaming.com/wp-content/uploads/2020/12/V-from-Cyberpunk-2077.jpg" alt="Small Image 3"></a>
+            <a href=""><img class="small-image" src="https://m.media-amazon.com/images/M/MV5BMTYzYzIxMjktMDM4NS00MTM5LWJlMDgtNDRhMDNhOGRmY2EwXkEyXkFqcGdeQXVyMTk2OTAzNTI@._V1_UY1200_CR85,0,630,1200_AL_.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://images2.alphacoders.com/597/thumb-1920-597965.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://e0.pxfuel.com/wallpapers/146/597/desktop-wallpaper-an-online-and-local-party-game-of-teamwork-and-betrayal-for-4-10-players-gaming-play-my-game-pc-games-among-us-real-life.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/333/495/HD-wallpaper-wizard101-wizard-city-online-game-wizard101-mmo-wizard.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2023/05/1-3.webp?ssl=1&quality=80&w=f" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/287/527/HD-wallpaper-the-crew-the-crew-games-pc-games-xbox-games-ps-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/904/79/HD-wallpaper-gta-v-blitzplay-gta-5-games-pc-games-xbox-games-ps-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/76/989/HD-wallpaper-fortnite-fortnite-games-2017-games-ps-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/941/8/HD-wallpaper-tekken-7-tekken-7-games-ps-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/428/686/HD-wallpaper-god-of-war-ragnarok-god-of-war-ragnarok-games-2022-games-ps5-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/593/266/HD-wallpaper-pubg-2021-global-gaming-pubg-ps5-games-playerunknowns-battlegrounds-2021-games-games.jpg" alt="Small Image 3"></a>
+            <a href="https://www.youtube.com/watch?v=Rc2zC-Rt2UE" target="_blank"><img class="small-image" src="https://w0.peakpx.com/wallpaper/851/406/HD-wallpaper-spiderman-ps5-spiderman-ps5-spiderman-ps4-spiderman-games-2021-games.jpg" alt="Small Image 3"></a>
+            <div class="d-grid gap-2 col-6 mx-auto">
+            <a href="https://gamemodules7sirproject1.netlify.app/#" target="_blank"><button  class="btn btn-danger" type="button">More Games</button></a>
+            
+            
+            </div>
+            
+          </div>
+    </div>
+</div>
+</div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+const data = document.querySelector('.large-image')
+console.log(data.matches('.container'))
+document.get
+
+</script>
+</html>
